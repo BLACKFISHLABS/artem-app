@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#673AB7</color>
+    <color name="colorPrimaryDark">#512DA8</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimaryLight">#D1C4E9</color>
+
+    <color name="colorPrimaryText">#1c1c1c</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+
+    <color name="colorWindowBackground">#f0f0f0</color>
+
+    <color name="color_accent_pressed">#6a00BFA5</color>
+    <color name="color_accent_focused">#9600BFA5</color>
+
+    <color name="color_background_card">#FFFFFF</color>
+
+    <color name="color_order_is_pending">@color/md_blue_500</color>
+    <color name="color_order_was_cancelled">@color/md_red_500</color>
+    <color name="color_order_invoiced">@color/md_green_500</color>
+
+</resources>

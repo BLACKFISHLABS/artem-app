@@ -1,0 +1,117 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWindowBackground"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.EditInfoAtelierActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@id/toolbar_all_actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/keyline_medium"
+            android:layout_marginTop="@dimen/keyline_medium"
+            android:layout_marginRight="@dimen/keyline_medium"
+            android:layout_marginBottom="@dimen/keyline_xlarge"
+            android:background="@drawable/form_background"
+            android:padding="@dimen/keyline_large"
+            android:stretchColumns="1">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/keyline_xlarge"
+                android:lineSpacingExtra="8sp"
+                android:text="Informações do Ateliê"
+                android:textColor="@color/colorAccent"
+                android:textSize="32sp"
+                android:textStyle="normal" />
+
+            <TableRow>
+
+                <ImageView
+                    android:layout_width="@dimen/size_all_left_icon_size"
+                    android:layout_height="@dimen/size_all_left_icon_size"
+                    android:layout_gravity="center_vertical"
+                    android:importantForAccessibility="no"
+                    app:srcCompat="@drawable/ic_business" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_atelier_name"
+                    style="@style/FormInputLayout"
+                    android:layout_column="1"
+                    android:layout_marginStart="@dimen/keyline_large"
+                    android:layout_marginLeft="@dimen/keyline_large"
+                    app:hintTextAppearance="@style/HintTextStyle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edit_text_atelier_name"
+                        style="@style/EditableField"
+                        android:hint="Nome do Ateliê"
+                        android:inputType="text|textCapWords" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+
+            <TableRow>
+
+                <ImageView
+                    android:layout_width="@dimen/size_all_left_icon_size"
+                    android:layout_height="@dimen/size_all_left_icon_size"
+                    android:layout_gravity="center_vertical"
+                    android:importantForAccessibility="no"
+                    app:srcCompat="@drawable/ic_phone" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_main_phone"
+                    style="@style/FormInputLayout"
+                    android:layout_column="1"
+                    android:layout_marginStart="@dimen/keyline_large"
+                    android:layout_marginLeft="@dimen/keyline_large"
+                    app:hintTextAppearance="@style/HintTextStyle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edit_text_main_phone"
+                        style="@style/EditableField"
+                        android:hint="Telefone"
+                        android:inputType="phone"
+                        android:maxLength="15" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </TableRow>
+
+        </TableLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/save_atelier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            app:srcCompat="@drawable/ic_check" />
+
+    </FrameLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

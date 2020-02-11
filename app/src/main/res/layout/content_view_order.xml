@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_view_order"
+    tools:context=".ui.ViewOrderActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/keyline_medium"
+        android:stretchColumns="1">
+
+        <TableRow>
+
+            <ImageView
+                android:layout_width="@dimen/size_all_left_icon_size"
+                android:layout_height="@dimen/size_all_left_icon_size"
+                android:layout_gravity="center_vertical"
+                android:importantForAccessibility="no"
+                app:srcCompat="@drawable/ic_date_range" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/FormInputLayout"
+                android:id="@+id/input_layout_issue_date">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/NonEditableField"
+                    android:id="@+id/edit_text_issue_date"
+                    android:layout_marginStart="@dimen/keyline_large"
+                    android:hint="@string/order_form_issue_date_hint" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:layout_width="@dimen/size_all_left_icon_size"
+                android:layout_height="@dimen/size_all_left_icon_size"
+                android:layout_gravity="center_vertical"
+                android:importantForAccessibility="no"
+                app:srcCompat="@drawable/ic_perm_identity" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/FormInputLayout"
+                android:id="@id/input_layout_customer_name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/NonEditableField"
+                    android:id="@+id/edit_text_customer_name"
+                    android:layout_marginStart="@dimen/keyline_large"
+                    android:hint="@string/order_form_customer_name_hint" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:layout_width="@dimen/size_all_left_icon_size"
+                android:layout_height="@dimen/size_all_left_icon_size"
+                android:layout_gravity="center_vertical"
+                android:importantForAccessibility="no"
+                app:srcCompat="@drawable/ic_attach_money" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/FormInputLayout"
+                android:id="@+id/input_layout_total_items">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/NonEditableField"
+                    android:id="@+id/edit_text_total_items"
+                    android:layout_marginStart="@dimen/keyline_large"
+                    android:hint="@string/order_form_total_items_hint" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:layout_width="@dimen/size_all_left_icon_size"
+                android:layout_height="@dimen/size_all_left_icon_size"
+                android:layout_gravity="center_vertical"
+                android:importantForAccessibility="no"
+                app:srcCompat="@drawable/ic_attach_money" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/FormInputLayout"
+                android:id="@+id/input_layout_total_hour_value">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/NonEditableField"
+                    android:id="@+id/edit_text_total_hour_value"
+                    android:layout_marginStart="@dimen/keyline_large"
+                    android:hint="@string/title_atelier_value_per_hour" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:layout_width="@dimen/size_all_left_icon_size"
+                android:layout_height="@dimen/size_all_left_icon_size"
+                android:layout_gravity="center_vertical"
+                android:importantForAccessibility="no"
+                app:srcCompat="@drawable/ic_exposure_plus_1_pink" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/FormInputLayout"
+                android:id="@+id/input_layout_total_hour_value_qnt">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/NonEditableField"
+                    android:id="@+id/edit_text_total_hour_value_qnt"
+                    android:layout_marginStart="@dimen/keyline_large"
+                    android:hint="@string/title_atelier_value_per_hour_qnt" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:layout_width="@dimen/size_all_left_icon_size"
+                android:layout_height="@dimen/size_all_left_icon_size"
+                android:layout_gravity="center_vertical"
+                android:importantForAccessibility="no"
+                app:srcCompat="@drawable/ic_label_outline" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/FormInputLayout"
+                android:id="@+id/input_layout_payment_method"
+                android:layout_marginStart="@dimen/keyline_large"
+                android:layout_column="1">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/NonEditableField"
+                    android:id="@+id/edit_text_payment_method"
+                    android:hint="@string/order_form_payment_method_label_clear" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </TableRow>
+
+        <TableRow>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/FormInputLayout"
+                android:id="@+id/input_layout_discount_percentage"
+                android:layout_marginStart="@dimen/keyline_large"
+                android:layout_column="1">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/NonEditableField"
+                    android:id="@+id/edit_text_discount_percentage"
+                    android:hint="@string/order_form_discount_percentage_hint" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </TableRow>
+
+        <TableRow>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/FormInputLayout"
+                android:id="@+id/input_layout_total_order"
+                android:layout_marginStart="@dimen/keyline_large"
+                android:layout_column="1">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/NonEditableField"
+                    android:id="@+id/edit_text_total_order"
+                    android:hint="@string/order_form_total_order_hint" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:layout_width="@dimen/size_all_left_icon_size"
+                android:layout_height="@dimen/size_all_left_icon_size"
+                android:layout_gravity="center_vertical"
+                android:importantForAccessibility="no"
+                app:srcCompat="@drawable/ic_format_align_left" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/FormInputLayout"
+                android:id="@+id/input_layout_observation"
+                android:layout_marginStart="@dimen/keyline_large">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/NonEditableField"
+                    android:id="@+id/edit_text_observation"
+                    android:hint="@string/order_form_observation_hint" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </TableRow>
+    </TableLayout>
+
+</androidx.core.widget.NestedScrollView>

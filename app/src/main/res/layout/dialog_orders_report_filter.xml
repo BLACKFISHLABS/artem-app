@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/keyline_large"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/keyline_medium"
+        android:text="@string/dialog_orders_report_filter_status_title"
+        android:textSize="32sp" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/keyline_medium">
+
+        <RadioButton
+            android:id="@+id/radio_button_status_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/dialog_orders_report_filter_status_all" />
+
+        <RadioButton
+            android:id="@+id/radio_button_status_pending"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_orders_report_filter_status_pending" />
+
+        <RadioButton
+            android:id="@+id/radio_button_status_sent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_orders_report_filter_status_sent" />
+
+        <RadioButton
+            android:id="@+id/radio_button_status_invoiced"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_orders_report_filter_status_invoiced" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/keyline_medium"
+        android:text="@string/dialog_orders_report_filter_issue_date_title"
+        android:textSize="32sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <EditText
+                style="@style/NonEditableField"
+                android:id="@+id/edit_text_issue_date_initial"
+                android:hint="@string/all_issue_date_initial"
+                tools:ignore="TextFields" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_vertical"
+            android:text="@string/all_and"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <EditText
+                style="@style/NonEditableField"
+                android:id="@+id/edit_text_issue_date_final"
+                android:hint="@string/all_issue_date_final"
+                tools:ignore="TextFields" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

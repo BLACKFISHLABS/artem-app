@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="@color/color_background_card"
+        card_view:cardCornerRadius="0dp"
+        card_view:cardElevation="5dp"
+        card_view:contentPadding="@dimen/keyline_large"
+        card_view:cardUseCompatPadding="true"
+        android:clickable="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_edit_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true">
+
+                <ViewSwitcher
+                    android:id="@+id/view_switcher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inAnimation="@android:anim/slide_in_left"
+                    android:outAnimation="@android:anim/slide_out_right">
+
+                    <TextView
+                        android:id="@+id/text_view_quantity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/keyline_small"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="@string/select_order_items_initial_quantity_text"
+                        android:singleLine="true" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/FormInputLayout"
+                        android:id="@+id/input_layout_edit_quantity">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            style="@style/EditableField"
+                            android:id="@+id/edit_text_edit_quantity"
+                            android:gravity="center"
+                            android:inputType="numberSigned"
+                            android:hint="@string/select_order_items_edit_quantity_hint"
+                            android:imeOptions="actionDone" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </ViewSwitcher>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/button_remove_item"
+                        android:layout_width="@dimen/size_add_order_button_edit"
+                        android:layout_height="@dimen/size_add_order_button_edit"
+                        android:contentDescription="@string/select_order_items_button_remove_item_accessibility"
+                        android:textColor="@android:color/white"
+                        android:background="@color/md_red_300"
+                        android:padding="@dimen/keyline_small"
+                        android:layout_marginRight="@dimen/keyline_medium"
+                        android:layout_marginEnd="@dimen/keyline_medium"
+                        app:srcCompat="@drawable/ic_exposure_neg_1" />
+
+                    <ImageButton
+                        android:id="@+id/button_add_item"
+                        android:layout_width="@dimen/size_add_order_button_edit"
+                        android:layout_height="@dimen/size_add_order_button_edit"
+                        android:contentDescription="@string/select_order_items_button_add_item_accessibility"
+                        android:textColor="@android:color/white"
+                        android:background="?attr/colorAccent"
+                        android:padding="@dimen/keyline_small"
+                        app:srcCompat="@drawable/ic_exposure_plus_1" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toLeftOf="@id/linear_layout_edit_quantity"
+                android:layout_toStartOf="@id/linear_layout_edit_quantity"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:id="@+id/text_view_product_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/keyline_medium"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    tools:text="@string/select_order_items_example_product_name" />
+
+                <TextView
+                    android:id="@+id/text_view_product_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/keyline_medium"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    tools:text="@string/select_order_items_example_product_price" />
+
+                <TextView
+                    android:id="@+id/text_view_item_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textStyle="bold"
+                    tools:text="@string/select_order_items_example_item_total" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

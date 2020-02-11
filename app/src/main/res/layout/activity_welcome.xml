@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWindowBackground"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.WelcomeActivity">
+
+    <LinearLayout
+        style="@style/ContainerLayout"
+        android:gravity="center"
+        android:layout_margin="48dp">
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/keyline_large"
+            android:text="@string/welcome_title"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="82sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/montserrat_regular" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/keyline_large"
+            android:text="@string/welcome_description"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/keyline_small"
+            android:background="@drawable/action_primary_button"
+            android:text="@string/welcome_button_find"
+            android:padding="@dimen/keyline_large"
+            android:textAllCaps="false"
+            android:textColor="@color/md_white_1000" />
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

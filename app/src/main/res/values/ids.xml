@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="stepper_layout" type="id" />
+    <item name="image_view_all_empty_state" type="id" />
+    <item name="swipe_container_all_pull_refresh" type="id" />
+    <item name="linear_layout_all_error_state" type="id" />
+    <item name="linear_layout_all_empty_state" type="id" />
+    <item name="text_view_all_empty_state" type="id" />
+    <item name="button_all_retry" type="id" />
+    <item name="card_view_all_item_card" type="id" />
+    <item name="toolbar_all_actionbar" type="id" />
+    <item name="action_all_done" type="id" />
+    <item name="action_all_search" type="id" />
+    <item name="view_pager_all_container" type="id" />
+    <item name="tab_layout_all_tabs" type="id" />
+    <item name="app_bar_all_actionbar" type="id" />
+    <item name="action_all_filter" type="id" />
+
+</resources>

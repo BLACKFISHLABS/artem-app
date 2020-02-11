@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="io.github.blackfishlabs.artem">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".BaseApplication"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <!-- Main screen -->
+        <activity
+            android:name=".ui.MainActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <!-- Welcome screen -->
+        <activity
+            android:name=".ui.WelcomeActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Atelier Info -->
+        <activity
+            android:name=".ui.EditInfoAtelierActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout"
+            android:label="@string/title_atelier"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+
+        <!-- Atelier Value Per Hour -->
+        <activity
+            android:name=".ui.EditInfoValuePerHourActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout"
+            android:label="@string/title_atelier_value_per_hour"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+
+        <!-- Atelier Investment-->
+        <activity
+            android:name=".ui.InvestmentActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout"
+            android:label="@string/title_atelier_investment"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+
+        <!-- Atelier Fixed Expenses-->
+        <activity
+            android:name=".ui.FixedExpensesActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout"
+            android:label="@string/title_fixed_expenses"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+
+        <!-- Add Customer-->
+        <activity
+            android:name=".ui.AddCustomerActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout"
+            android:label="@string/add_customer_new_title"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+
+        <!-- Add Product-->
+        <activity
+            android:name=".ui.AddProductCostActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout"
+            android:label="@string/add_product_new_title"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+
+        <!-- Add Order-->
+        <activity
+            android:name=".ui.AddOrderActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout"
+            android:label="@string/add_order_title"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+
+        <!-- Add Order-->
+        <activity
+            android:name=".ui.ViewOrderActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout"
+            android:label="@string/add_order_view_title"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+    </application>
+
+</manifest>

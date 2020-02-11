@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_add_customers"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.ProductFormStepFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/keyline_large"
+            android:stretchColumns="1">
+
+            <TextView
+                android:id="@+id/dialog_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/keyline_xlarge"
+                android:lineSpacingExtra="8sp"
+                android:text="@string/add_product_description_step"
+                android:textColor="@color/colorAccent"
+                android:textSize="24sp" />
+
+            <TableRow>
+
+                <ImageView
+                    android:layout_width="@dimen/size_all_left_icon_size"
+                    android:layout_height="@dimen/size_all_left_icon_size"
+                    android:layout_gravity="center_vertical"
+                    android:importantForAccessibility="no"
+                    app:srcCompat="@drawable/ic_label_outline" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_product_name"
+                    style="@style/FormInputLayout"
+                    android:layout_column="1"
+                    android:layout_marginLeft="@dimen/keyline_large"
+                    android:layout_marginStart="@dimen/keyline_large"
+                    app:hintTextAppearance="@style/HintTextStyle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edit_text_product_name"
+                        style="@style/EditableField"
+                        android:hint="@string/add_product_description_hint"
+                        android:inputType="text|textCapWords" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+
+        </TableLayout>
+
+    </FrameLayout>
+</androidx.core.widget.NestedScrollView>

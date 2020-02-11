@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_delete"
+        android:title="@string/order_list_remove_items"
+        android:icon="@drawable/ic_remove_circle"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_cancel"
+        android:title="@string/order_list_cancel_items"
+        android:icon="@drawable/ic_cancel"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_invoice"
+        android:title="@string/order_list_invoice_item"
+        android:icon="@drawable/ic_account_balance_wallet"
+        app:showAsAction="always" />
+</menu>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWindowBackground"
+    tools:context=".ui.AboutFragment">
+
+    <LinearLayout
+        style="@style/ContainerLayout"
+        android:gravity="top"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:id="@+id/bfLabs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blackfishlabs"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="48sp" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/description_about"
+            android:textColor="@color/colorPrimaryText"
+            android:layout_marginBottom="@dimen/keyline_large" />
+
+        <TextView
+            android:id="@+id/bfWeSite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blackfishlabs_github_io"
+            android:textColor="@color/colorPrimaryText"
+            android:layout_marginBottom="@dimen/keyline_large" />
+
+        <Button
+            android:id="@+id/btnSendMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/keyline_small"
+            android:background="@drawable/action_primary_button"
+            android:text="@string/question_email"
+            android:padding="@dimen/keyline_large"
+            android:textAllCaps="false"
+            android:textColor="@color/md_white_1000" />
+
+    </LinearLayout>
+
+</FrameLayout>

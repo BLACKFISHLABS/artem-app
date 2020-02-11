@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add_order_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorWindowBackground"
+    tools:context=".ui.AddOrderActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_all_actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.stepstone.stepper.StepperLayout
+        android:id="@id/stepper_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:ms_stepperType="progress_bar"
+        app:ms_backButtonText="@string/add_button_back_text"
+        app:ms_backButtonColor="?attr/colorAccent"
+        app:ms_nextButtonText="@string/add_button_next_text"
+        app:ms_nextButtonColor="?attr/colorAccent"
+        app:ms_completeButtonText="@string/add_button_complete_text"
+        app:ms_completeButtonColor="?attr/colorPrimary"
+        app:ms_showErrorState="true"
+        app:ms_errorColor="?attr/colorAccent" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

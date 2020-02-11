@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/keyline_large">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8sp"
+            android:text="@string/lbl_edit_price_product_title"
+            android:textColor="@color/colorAccent"
+            android:textSize="32sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/dialog_title_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/keyline_xlarge"
+            android:lineSpacingExtra="8sp"
+            android:text="@string/lbl_edit_price_product_description"
+            android:textColor="@color/colorAccent" />
+
+        <TableRow android:id="@+id/add_markup">
+
+            <ImageView
+                android:layout_width="@dimen/size_all_left_icon_size"
+                android:layout_height="@dimen/size_all_left_icon_size"
+                android:layout_gravity="center_vertical"
+                android:importantForAccessibility="no"
+                app:srcCompat="@drawable/ic_label_outline" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_layout_dialog_markup"
+                style="@style/FormInputLayout"
+                android:layout_column="1"
+                android:layout_marginStart="@dimen/keyline_large"
+                android:layout_marginLeft="@dimen/keyline_large"
+                app:hintTextAppearance="@style/HintTextStyle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_text_dialog_markup"
+                    style="@style/EditableField"
+                    android:hint="Adicionar Markup (%)"
+                    android:inputType="numberDecimal" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </TableRow>
+
+        <TableRow android:id="@+id/calculated_value">
+
+            <ImageView
+                android:layout_width="@dimen/size_all_left_icon_size"
+                android:layout_height="@dimen/size_all_left_icon_size"
+                android:layout_gravity="center_vertical"
+                android:importantForAccessibility="no"
+                app:srcCompat="@drawable/ic_attach_money" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_layout_dialog_value"
+                style="@style/FormInputLayout"
+                android:layout_column="1"
+                android:layout_marginStart="@dimen/keyline_large"
+                android:layout_marginLeft="@dimen/keyline_large"
+                app:hintTextAppearance="@style/HintTextStyle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_text_dialog_value"
+                    style="@style/NonEditableField"
+                    android:hint="Valor Calculado"
+                    android:inputType="numberDecimal" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </TableRow>
+
+        <TableRow android:id="@+id/manual_value">
+
+            <ImageView
+                android:layout_width="@dimen/size_all_left_icon_size"
+                android:layout_height="@dimen/size_all_left_icon_size"
+                android:layout_gravity="center_vertical"
+                android:importantForAccessibility="no"
+                app:srcCompat="@drawable/ic_attach_money" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_layout_dialog_value_change"
+                style="@style/FormInputLayout"
+                android:layout_column="1"
+                android:layout_marginStart="@dimen/keyline_large"
+                android:layout_marginLeft="@dimen/keyline_large"
+                app:hintTextAppearance="@style/HintTextStyle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_text_dialog_value_change"
+                    style="@style/EditableField"
+                    android:hint="Valor Manual"
+                    android:inputType="numberDecimal" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </TableRow>
+
+    </TableLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

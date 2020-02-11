@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/keyline_large">
+
+    <View
+        android:id="@+id/view_order_status"
+        android:layout_width="@dimen/keyline_large"
+        android:layout_height="@dimen/keyline_large"
+        android:layout_marginLeft="@dimen/keyline_medium"
+        android:layout_marginStart="@dimen/keyline_medium"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/all_shape_order_status" />
+
+    <TextView
+        android:id="@+id/text_view_order_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/keyline_small"
+        android:layout_toLeftOf="@id/view_order_status"
+        android:layout_toStartOf="@id/view_order_status"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        tools:text="@string/order_list_example_order_number" />
+
+    <TextView
+        android:id="@+id/text_view_order_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/keyline_small"
+        android:layout_below="@id/text_view_order_number"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:maxLines="1"
+        android:ellipsize="end"
+        tools:text="@string/order_list_example_order_date" />
+
+    <TextView
+        android:id="@+id/text_view_customer_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/keyline_small"
+        android:layout_below="@id/text_view_order_date"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        tools:text="@string/order_list_example_customer_name" />
+
+    <TextView
+        android:id="@+id/text_view_total_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_customer_name"
+        android:paddingBottom="@dimen/keyline_small"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:maxLines="1"
+        android:ellipsize="end"
+        tools:text="@string/order_list_example_total_order" />
+
+</RelativeLayout>

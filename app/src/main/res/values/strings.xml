@@ -1,0 +1,264 @@
+<resources>
+    <string name="app_name">Artem</string>
+
+    <!-- Step -->
+    <string name="add_button_back_text">Anterior</string>
+    <string name="add_button_next_text">Próximo</string>
+    <string name="add_button_complete_text">Finalizar</string>
+
+    <!-- Menu Panel -->
+    <string name="title_dashboard">Painel</string>
+    <!-- Menu About -->
+    <string name="title_about_developer">Sobre</string>
+    <string name="blackfishlabs">BLACKFISH LABS</string>
+    <string name="blackfishlabs_github_io">blackfishlabs.github.io</string>
+    <string name="description_about">APLICATIVOS E SOFTWARE SOB MEDIDA PARA NEGÓCIOS DIGITAIS</string>
+    <!-- Menu Products -->
+    <string name="title_product">Meus Produtos</string>
+    <!-- Menu Customers -->
+    <string name="title_customer">Meus Clientes</string>
+    <!-- Menu Orders -->
+    <string name="title_order">Minhas Encomendas</string>
+    <!-- Menu Atelier -->
+    <string name="title_atelier">Meu Ateliê</string>
+    <string name="title_atelier_value_per_hour">Valor Hora Trabalhada</string>
+    <string name="title_atelier_investment">Meus Investimentos</string>
+    <string name="lbl_new_investment_title">Novo Investimento</string>
+    <string name="lbl_edit_investment_title">Editar Investimento</string>
+    <string name="lbl_recover_value">Planejo recuperar este valor em:\nClique aqui!</string>
+    <string name="lbl_resume">Aproximadamente R$0,00 ao mês</string>
+    <string name="lbl_new_fixed_expense_title">Nova Despesa</string>
+    <string name="lbl_edit_fixed_expense_title">Editar Despesa</string>
+    <string name="title_fixed_expenses">Minhas Despesas Fixas</string>
+    <!-- Menu Report -->
+    <string name="title_report">Relatórios de Pedidos</string>
+
+    <!-- Bottom Sheet Dialog -->
+    <string name="title_new">Adicionar</string>
+    <string name="title_new_order">Encomenda</string>
+    <string name="title_new_customer">Cliente</string>
+    <string name="title_new_product">Produto</string>
+
+    <!-- Common strings -->
+    <string name="all_done">Pronto</string>
+    <string name="all_retry">Tente novamente</string>
+    <string name="all_search">Pesquisar</string>
+    <string name="all_show_filters">Monstrar filtros</string>
+    <string name="all_please_wait">Por favor aguarde</string>
+    <string name="all_offline_message_title">Você está offline</string>
+    <string name="all_offline_message">
+        Não é possível continuar, detectamos que o aparelho está offline. Verifique a conexão
+        de rede ou tente novamente.
+    </string>
+    <string name="all_server_error_message">
+        Desculpe, o servidor apresentou um erro. Por favor tente novamente.
+    </string>
+    <string name="all_network_error_message">
+        Desculpe, houve um erro de rede. Por favor tente novamente.
+    </string>
+    <string name="all_unknown_error_message">
+        Desculpe, houve um erro desconhecido. Por favor tente novamente.
+    </string>
+    <string name="all_required_field_error">Campo obrigatório</string>
+    <string name="all_saving_message">Salvando…</string>
+    <string name="all_saved_message">Registro salvo com sucesso</string>
+    <string name="all_correct_required_fields_error">
+        Por favor, preencha os campos obrigatórios
+    </string>
+    <string name="all_correct_required_lists_error">
+        Por favor, preencha a lista obrigatória
+    </string>
+    <string name="all_correct_fields_error">Por favor, corrija os campos com erros!</string>
+    <string name="all_unknown_error_saving_form">
+        Desculpe, houve um erro desconhecido e o cadastro não foi salvo. Por favor tente novamente!
+    </string>
+    <string name="all_apply_filter">Aplicar filtros</string>
+    <string name="all_filters_title">Filtros</string>
+    <string name="all_and"><![CDATA[&]]></string>
+    <string name="all_issue_date_initial">Data inicial</string>
+    <string name="all_issue_date_final">Data final</string>
+
+    <!-- Dashboard strings -->
+    <string name="dashboard_error_loading_orders_grouped">
+        Desculpe, houve uma falha quando tentamos carregar os dados do gráfico.
+        Por favor tente novamente!
+    </string>
+    <string name="dashboard_no_orders">Seus pedidos são representados em gráfico aqui</string>
+    <string name="dashboard_chart_label">Todos Pedidos realizados</string>
+    <string name="dashboard_chart_center_text">Pedidos\nPor Cliente</string>
+
+    <!-- Product List strings -->
+    <string name="product_list_error_loading_products">
+        Desculpe, houve uma falha quando tentamos carregar os dados de seus produtos.
+        Por favor tente novamente!
+    </string>
+    <string name="product_list_no_products">Seus produtos de artesanato são listados aqui</string>
+    <string name="product_list_example_product_name">Patchwork</string>
+    <string name="product_list_example_product_price">Preço R$ 100.00</string>
+    <string name="product_list_example_stock_quantity">Quantidade 100</string>
+    <string name="product_list_template_product_price">Preço %1$s</string>
+    <string name="product_list_template_product_stock_quantity">Quantidade %1$s</string>
+    <string name="product_list_search_hint">Descrição do Produto …</string>
+
+    <!-- Customer List strings -->
+    <string name="customer_list_error_loading_customers">
+        Desculpe, houve uma falha quando tentamos carregar os dados de seus pedidos.
+        Por favor tente novamente!
+    </string>
+    <string name="customer_list_no_customers">Seus clientes são listados aqui</string>
+    <string name="customer_list_example_name">Jeferson Cruz</string>
+    <string name="customer_list_example_cpf_or_cnpj">00000000000000</string>
+    <string name="customer_list_example_phone">(65) 99616–8022</string>
+    <string name="customer_list_example_email">blackfish@mail.com</string>
+    <string name="customer_list_template_text_phones">%1$s &#47; %2$s</string>
+    <string name="customer_list_text_no_phone">Sem telefone</string>
+    <string name="customer_list_text_no_email">Sem e-mail</string>
+    <string name="customer_list_search_hint">Nome do Cliente …</string>
+
+    <!-- Order List strings -->
+    <string name="order_list_example_order_number">PED-ABCD</string>
+    <string name="order_list_example_customer_name">Cliente: Jeferson Cruz</string>
+    <string name="order_list_example_total_order">Total R$ 204.89</string>
+    <string name="order_list_example_order_date">Emissão 27/09/2019</string>
+    <string name="order_list_no_orders">Seus pedidos são listados aqui</string>
+    <string name="order_list_all_orders_fragment_title">Todos os Pedidos</string>
+    <string name="order_list_pending_orders_fragment_title">Não Faturados</string>
+    <string name="order_list_fragment_title">Meus Pedidos</string>
+    <string name="order_list_search_hint">Use o nome do cliente</string>
+    <string name="order_list_template_text_order_date">Emissão %1$s</string>
+    <string name="order_list_template_text_order_number">%1$s</string>
+    <string name="order_list_template_text_order_total">Total: %1$s</string>
+    <string name="order_list_template_text_customer_name">Cliente: %1$s</string>
+
+    <!-- Customer strings -->
+    <string name="add_customer_customer_name_hint">Nome Completo do Cliente</string>
+    <string name="add_customer_email_hint">E-mail</string>
+    <string name="add_customer_postal_code_hint">CEP</string>
+    <string name="add_customer_address_hint">Endereço</string>
+    <string name="add_customer_address_number_hint">Numero</string>
+    <string name="add_customer_select_city_hint">Cidade</string>
+    <string name="add_customer_address_complement_hint">Complemento</string>
+    <string name="add_customer_district_hint">Bairro</string>
+    <string name="add_customer_main_phone_hint">Telefone</string>
+    <string name="add_customer_searching_postal_code_message">
+        Estamos buscando o cep informado…
+    </string>
+    <string name="add_customer_editing_title">Editando cliente</string>
+    <string name="add_customer_new_title">Novo cliente</string>
+    <string name="add_customer_invalid_email">E-mail inválido</string>
+    <string name="add_customer_invalid_phone_number">Telefone inválido</string>
+    <string name="add_customer_invalid_postal_code">CEP inválido</string>
+    <string name="add_customer_saved_successfully">Cliente salvo com sucesso!</string>
+
+    <!-- Product strings -->
+    <string name="add_product_editing_title">Editando Produto</string>
+    <string name="add_product_form_step">Dados do Meu Produto Incrível</string>
+    <string name="add_product_select_items_step">Materiais do Produto</string>
+    <string name="add_product_description_step">Descrição do produto de artesanato que eu produzo.</string>
+    <string name="add_product_description_hint">Descrição do Produto</string>
+    <string name="add_product_new_title">Novo Produto</string>
+    <string name="add_product_material_step">Materiais que compõe o seu produto de artesanato.</string>
+    <string name="finish_product_step">Finalizando Cadastro de Produto</string>
+    <string name="add_product_finish_step">Custo calculado da produção do produto.</string>
+    <string name="lbl_new_material_title">Adicionar Material</string>
+    <string name="lbl_edit_price_product_title">Editar Custo</string>
+    <string name="lbl_edit_price_product_description">Para adicionar um valor manual, pressione levemente por alguns segundos, no campo valor calculado.</string>
+    <string name="add_product_saved_successfully">Produto salvo com sucesso!</string>
+
+    <!-- Order strings -->
+    <string name="add_order_title">Novo pedido</string>
+    <string name="add_order_view_title">Pedido</string>
+    <string name="add_order_editing_title">Editando pedido</string>
+    <string name="add_order_select_customer_step">Selecione o cliente</string>
+    <string name="add_order_select_items_step">Adicione os produtos</string>
+    <string name="add_order_form_step">Finalizando</string>
+
+    <!-- Select Customer screen -->
+    <string name="select_customer_step_not_selected_error">
+        É necessário selecionar o cliente!
+    </string>
+
+    <!-- Select Order Items screen -->
+    <string name="select_order_items_initial_quantity_text">0</string>
+    <string name="select_order_items_edit_quantity_hint">Outra qtde</string>
+    <string name="select_order_items_button_add_item_accessibility">Adicione um item</string>
+    <string name="select_order_items_button_remove_item_accessibility">Remova um item</string>
+    <string name="select_order_items_example_product_name">Carrinho de Rolimã</string>
+    <string name="select_order_items_example_product_price">Preço R$ 100.00</string>
+    <string name="select_order_items_example_item_total">Total R$ 100.00</string>
+    <string name="select_order_items_no_items">Os itens do pedido são listados aqui</string>
+    <string name="select_order_items_no_order_items">É necessário adicionar itens ao pedido!</string>
+    <string name="select_order_items_invalid_quantity">Quantidade inválida!</string>
+    <string name="select_order_items_template_product_price">Preço %1$s</string>
+    <string name="select_order_items_template_item_total">Total %1$s</string>
+    <string name="select_order_items_search_hint">Use a descrição</string>
+
+    <!-- Order Form screen -->
+    <string name="order_form_issue_date_hint">Data de emissão</string>
+    <string name="order_form_customer_name_hint">Nome do cliente</string>
+    <string name="order_form_total_items_hint">Total dos itens</string>
+    <string name="order_form_discount_percentage_hint">Porcentagem do desconto</string>
+    <string name="order_form_payment_method_hint">Selecione a forma de pagamento</string>
+    <string name="order_form_payment_method_label">Forma de pagamento (%1$s)</string>
+    <string name="order_form_payment_method_label_clear">Forma de pagamento</string>
+    <string name="order_form_no_discount">Sem desconto</string>
+    <string name="order_form_observation_hint">Observação</string>
+    <string name="order_form_unknown_error_loading_payment_methods">
+        Desculpe, houve um erro desconhecido e a lista das formas de pagamento não pôde ser carregada.
+        Por favor tente novamente.
+    </string>
+    <string name="order_form_salesman_cant_apply_discount">
+        Você não está autorizado à aplicar desconto!
+    </string>
+    <string name="order_form_discount_value_not_allowed">
+        Desconto acima do permitido para esta forma de pagamento!
+    </string>
+    <string name="order_form_saved_successfully">Pedido salvo com sucesso!</string>
+    <string name="order_form_payment_method_with_no_discount">
+        Não há desconto para esta forma de pagamento!
+    </string>
+    <string name="order_form_total_order_hint">Total do pedido</string>
+    <string name="add_order_saved_successfully">Pedido salvo com sucesso!</string>
+    <string name="orders_report_text_no_order_number">Sem número de venda!</string>
+
+    <!-- View Order screen -->
+    <string name="title_activity_view_order">Pedido %1$s</string>
+    <string name="order_status_cancelled">Cancelado</string>
+    <string name="order_status_invoiced">Faturado</string>
+    <string name="order_list_cancel_items">Cancelar</string>
+    <string name="order_list_remove_items">Remover</string>
+    <string name="order_list_invoice_item">Faturar</string>
+
+    <!-- Orders Report strings -->
+    <string name="orders_report_list_error_loading_report">
+        Desculpe, houve uma falha quando tentamos carregar os dados do relatório de pedidos.
+        Por favor tente novamente!
+    </string>
+    <string name="orders_report_fragment_title">Relatório pedidos</string>
+    <string name="orders_report_no_orders">Seu relatório dos pedidos é visualizado aqui</string>
+
+    <!-- Orders Report screen -->
+    <string name="dialog_orders_report_filter_status_title">Status</string>
+    <string name="dialog_orders_report_filter_status_all">Todos</string>
+    <string name="dialog_orders_report_filter_status_pending">Pendentes</string>
+    <string name="dialog_orders_report_filter_status_sent">Cancelados</string>
+    <string name="dialog_orders_report_filter_issue_date_title">Emitido entre</string>
+    <string name="dialog_orders_report_filter_status_invoiced">Faturados</string>
+    <string name="orders_report_total_title">Total %1$s</string>
+
+    <!-- -->
+    <string name="fake_zero">R$ 0,00</string>
+    <string name="fixed_expenses_description_one">O total é dividido pelo tempo trabalhado</string>
+    <string name="fixed_expenses_description_two">Valores proporcionais ao uso do ateliê</string>
+    <string name="welcome_title">seja bem vindo</string>
+    <string name="welcome_description">Precifique seus produtos artesanais e controle seus pedidos</string>
+    <string name="welcome_button_find">crie sua conta</string>
+    <string name="title_exit">Logout</string>
+    <string name="question_email">Sugestões ou Dúvidas</string>
+    <string name="title_atelier_value_per_hour_qnt">Quantidade de Horas</string>
+    <string name="afiliate_help">
+        Se você precisa aceitar cartões no seu negócio a melhor opção são as maquininhas de cartões do PagSeguro!
+        \n\nClique na imagem para ser direcionado a compra do item.
+    </string>
+    <string name="title_ads">PagSeguro</string>
+</resources>
