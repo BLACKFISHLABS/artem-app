@@ -25,7 +25,7 @@ Use bastante e nos dê um feedback!
 Divulgue para as amigas!
 
 ## Play Store
-(link)
+http://bit.ly/2uGvm86
 
 ## Open source
 Sinta-se a vontade para realizar um pull request
