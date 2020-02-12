@@ -9,8 +9,8 @@ android {
         applicationId "io.github.blackfishlabs.artem"
         minSdkVersion 22
         targetSdkVersion 29
-        versionCode 11
-        versionName "1.1.1"
+        versionCode 12
+        versionName "1.1.2"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
         multiDexEnabled true
@@ -76,7 +76,7 @@ dependencies {
     // Logging
     implementation 'com.jakewharton.timber:timber:4.5.1'
     // MultiDex Auto
-    implementation 'androidx.multidex:multidex:2.0.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
     // dexter runtime permissions
     implementation 'com.karumi:dexter:5.0.0'
     // Chart

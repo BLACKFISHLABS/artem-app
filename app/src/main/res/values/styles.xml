@@ -38,18 +38,21 @@
         <item name="android:scrollbarStyle">insideOverlay</item>
     </style>
 
-    <style name="FormInputLayout" parent="Widget.Design.TextInputLayout">
+    <style name="FormInputLayout" parent="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginBottom">@dimen/keyline_medium</item>
+        <item name="android:clipChildren">false</item>
+        <item name="android:layout_marginBottom">8dp</item>
     </style>
 
     <style name="EditableField" parent="Widget.AppCompat.EditText">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
         <item name="android:selectAllOnFocus">true</item>
         <item name="android:imeOptions">actionNext</item>
+        <item name="android:padding">16dp</item>
     </style>
 
     <style name="NonEditableField" parent="Widget.AppCompat.EditText">
@@ -60,6 +63,13 @@
         <item name="android:longClickable">false</item>
         <item name="android:cursorVisible">false</item>
         <item name="android:inputType">none</item>
+        <item name="android:translationY">4dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">top|left</item>
     </style>
 
     <style name="HintTextStyle" parent="TextAppearance.Design.Hint">
