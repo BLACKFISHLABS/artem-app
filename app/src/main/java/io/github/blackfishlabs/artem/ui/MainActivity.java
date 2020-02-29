@@ -67,7 +67,7 @@ public class MainActivity extends BaseActivity implements Drawer.OnDrawerItemCli
     private SecondaryDrawerItem aboutDrawerItem;
     private SecondaryDrawerItem infoDrawerItem;
     private SecondaryDrawerItem exitDrawerItem;
-    private SecondaryDrawerItem pagSeguroDrawerItem;
+    private SecondaryDrawerItem adsDrawerItem;
 
     private BottomSheetBehavior<View> bottomSheetBehavior;
     private BottomSheetDialog bottomSheetDialog;
@@ -325,8 +325,8 @@ public class MainActivity extends BaseActivity implements Drawer.OnDrawerItemCli
     }
 
     private SecondaryDrawerItem createAdsDrawerItem() {
-        if (pagSeguroDrawerItem == null) {
-            pagSeguroDrawerItem = new SecondaryDrawerItem()
+        if (adsDrawerItem == null) {
+            adsDrawerItem = new SecondaryDrawerItem()
                     .withIdentifier(DRAWER_ITEM_PAG_SEGURO)
                     .withName(getString(R.string.title_ads))
                     .withDescription("Maquininhas de Cartões")
@@ -335,7 +335,7 @@ public class MainActivity extends BaseActivity implements Drawer.OnDrawerItemCli
                             .create(getResources(), R.drawable.ic_credit_card, getTheme()));
         }
 
-        return pagSeguroDrawerItem;
+        return adsDrawerItem;
     }
 
 

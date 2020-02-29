@@ -16,8 +16,8 @@ public class AdsFragment extends BaseFragment {
 
     public static final String TAG = AdsFragment.class.getName();
 
-    @BindView(R.id.goToStorePagSeguro)
-    ImageView imvPagSeguro;
+    @BindView(R.id.goToStore)
+    ImageView imvStore;
 
     public static AdsFragment newInstance() {
         return new AdsFragment();
@@ -32,9 +32,7 @@ public class AdsFragment extends BaseFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle inState) {
         View view = super.onCreateView(inflater, container, inState);
-
-        imvPagSeguro.setOnClickListener(v -> navigate().toWebSite("https://loja.pagseguro.uol.com.br/?cm=V0KNw9qO"));
-
+        imvStore.setOnClickListener(v -> navigate().toWebSite("http://mpago.li/1sMAHf"));
         return view;
     }
 }

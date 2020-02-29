@@ -250,15 +250,15 @@
     <string name="fake_zero">R$ 0,00</string>
     <string name="fixed_expenses_description_one">O total é dividido pelo tempo trabalhado</string>
     <string name="fixed_expenses_description_two">Valores proporcionais ao uso do ateliê</string>
-    <string name="welcome_title">seja bem vindo</string>
+    <string name="welcome_title">seja bem vinda(o)</string>
     <string name="welcome_description">Precifique seus produtos artesanais e controle seus pedidos</string>
     <string name="welcome_button_find">crie sua conta</string>
     <string name="title_exit">Logout</string>
     <string name="question_email">Sugestões ou Dúvidas</string>
     <string name="title_atelier_value_per_hour_qnt">Quantidade de Horas</string>
     <string name="afiliate_help">
-        Se você precisa aceitar cartões no seu negócio a melhor opção são as maquininhas de cartões do PagSeguro!
-        \n\nClique na imagem para ser direcionado a compra do item.
+        Se você precisa aceitar cartões no seu negócio a melhor opção são as maquininhas de cartões do Mercado Pago!
+        \n\nClique na imagem para ser direcionado a compra do item.\n
     </string>
-    <string name="title_ads">PagSeguro</string>
+    <string name="title_ads">Mercado Pago</string>
 </resources>
