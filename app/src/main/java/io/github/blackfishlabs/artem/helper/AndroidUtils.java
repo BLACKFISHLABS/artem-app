@@ -77,7 +77,7 @@ public class AndroidUtils {
     }
 
     public static Typeface getFont(final Context context) {
-        return ResourcesCompat.getFont(context, R.font.montserrat_regular);
+        return ResourcesCompat.getFont(context, R.font.comfortaa);
     }
 
 }

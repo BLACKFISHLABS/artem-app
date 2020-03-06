@@ -20,9 +20,9 @@
             android:layout_marginBottom="@dimen/keyline_large"
             android:text="@string/welcome_title"
             android:textColor="@color/colorPrimaryDark"
-            android:textSize="82sp"
+            android:textSize="60sp"
             android:textStyle="bold"
-            android:fontFamily="@font/montserrat_regular" />
+            android:fontFamily="@font/comfortaa" />
 
         <TextView
             android:id="@+id/description"
