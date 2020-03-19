@@ -9,8 +9,8 @@ android {
         applicationId "io.github.blackfishlabs.artem"
         minSdkVersion 22
         targetSdkVersion 29
-        versionCode 15
-        versionName "1.1.5"
+        versionCode 16
+        versionName "1.1.6"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
         multiDexEnabled true
@@ -69,8 +69,8 @@ dependencies {
     implementation 'io.reactivex.rxjava2:rxjava:2.1.17'
     implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
     // Butter knife
-    implementation "com.jakewharton:butterknife:10.1.0"
-    annotationProcessor "com.jakewharton:butterknife-compiler:10.1.0"
+    implementation "com.jakewharton:butterknife:10.2.1"
+    annotationProcessor "com.jakewharton:butterknife-compiler:10.2.1"
     // Event Bus
     implementation 'org.greenrobot:eventbus:3.0.0'
     // Logging
@@ -101,7 +101,7 @@ dependencies {
     // Firebase
     implementation 'com.google.firebase:firebase-core:17.2.3'
     implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
-    implementation "com.google.firebase:firebase-auth:19.2.0"
+    implementation "com.google.firebase:firebase-auth:19.3.0"
     implementation "com.firebaseui:firebase-ui-auth:4.2.1"
     implementation 'com.google.firebase:firebase-analytics:17.2.3'
     // Picasso

@@ -43,7 +43,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/keyline_xlarge"
                 android:lineSpacingExtra="8sp"
-                android:text="Calcule o valor da sua hora"
+                android:text="Valor da sua hora"
                 android:textColor="@color/colorAccent"
                 android:textSize="32sp"
                 android:textStyle="normal" />
@@ -115,7 +115,7 @@
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/edit_text_week_days"
                         style="@style/EditableField"
-                        android:hint="Trabalhará quantos dias da semana"
+                        android:hint="Quantos dias da semana"
                         android:inputType="number" />
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -141,7 +141,7 @@
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/edit_text_money_focus"
                         style="@style/EditableField"
-                        android:hint="Foco de recebimento por este tempo"
+                        android:hint="Valor de ganho mensal"
                         android:inputType="numberDecimal" />
 
                 </com.google.android.material.textfield.TextInputLayout>

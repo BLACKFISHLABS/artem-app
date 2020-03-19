@@ -16,7 +16,6 @@
         android:stretchColumns="1">
 
         <TableRow>
-
             <ImageView
                 android:layout_width="@dimen/size_all_left_icon_size"
                 android:layout_height="@dimen/size_all_left_icon_size"
@@ -26,19 +25,18 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/FormInputLayout"
-                android:id="@+id/input_layout_issue_date">
+                android:id="@+id/input_layout_issue_date"
+                android:layout_marginStart="@dimen/keyline_large">
 
                 <com.google.android.material.textfield.TextInputEditText
                     style="@style/NonEditableField"
                     android:id="@+id/edit_text_issue_date"
-                    android:layout_marginStart="@dimen/keyline_large"
                     android:hint="@string/order_form_issue_date_hint" />
 
             </com.google.android.material.textfield.TextInputLayout>
         </TableRow>
 
         <TableRow>
-
             <ImageView
                 android:layout_width="@dimen/size_all_left_icon_size"
                 android:layout_height="@dimen/size_all_left_icon_size"
@@ -48,19 +46,18 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/FormInputLayout"
-                android:id="@id/input_layout_customer_name">
+                android:id="@id/input_layout_customer_name"
+                android:layout_marginStart="@dimen/keyline_large">
 
                 <com.google.android.material.textfield.TextInputEditText
                     style="@style/NonEditableField"
                     android:id="@+id/edit_text_customer_name"
-                    android:layout_marginStart="@dimen/keyline_large"
                     android:hint="@string/order_form_customer_name_hint" />
 
             </com.google.android.material.textfield.TextInputLayout>
         </TableRow>
 
         <TableRow>
-
             <ImageView
                 android:layout_width="@dimen/size_all_left_icon_size"
                 android:layout_height="@dimen/size_all_left_icon_size"
@@ -70,19 +67,18 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/FormInputLayout"
-                android:id="@+id/input_layout_total_items">
+                android:id="@+id/input_layout_total_items"
+                android:layout_marginStart="@dimen/keyline_large">
 
                 <com.google.android.material.textfield.TextInputEditText
                     style="@style/NonEditableField"
                     android:id="@+id/edit_text_total_items"
-                    android:layout_marginStart="@dimen/keyline_large"
                     android:hint="@string/order_form_total_items_hint" />
 
             </com.google.android.material.textfield.TextInputLayout>
         </TableRow>
 
         <TableRow>
-
             <ImageView
                 android:layout_width="@dimen/size_all_left_icon_size"
                 android:layout_height="@dimen/size_all_left_icon_size"
@@ -92,19 +88,18 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/FormInputLayout"
-                android:id="@+id/input_layout_total_hour_value">
+                android:id="@+id/input_layout_total_hour_value"
+                android:layout_marginStart="@dimen/keyline_large">
 
                 <com.google.android.material.textfield.TextInputEditText
                     style="@style/NonEditableField"
                     android:id="@+id/edit_text_total_hour_value"
-                    android:layout_marginStart="@dimen/keyline_large"
                     android:hint="@string/title_atelier_value_per_hour" />
 
             </com.google.android.material.textfield.TextInputLayout>
         </TableRow>
 
         <TableRow>
-
             <ImageView
                 android:layout_width="@dimen/size_all_left_icon_size"
                 android:layout_height="@dimen/size_all_left_icon_size"
@@ -114,19 +109,18 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/FormInputLayout"
-                android:id="@+id/input_layout_total_hour_value_qnt">
+                android:id="@+id/input_layout_total_hour_value_qnt"
+                android:layout_marginStart="@dimen/keyline_large">
 
                 <com.google.android.material.textfield.TextInputEditText
                     style="@style/NonEditableField"
                     android:id="@+id/edit_text_total_hour_value_qnt"
-                    android:layout_marginStart="@dimen/keyline_large"
                     android:hint="@string/title_atelier_value_per_hour_qnt" />
 
             </com.google.android.material.textfield.TextInputLayout>
         </TableRow>
 
         <TableRow>
-
             <ImageView
                 android:layout_width="@dimen/size_all_left_icon_size"
                 android:layout_height="@dimen/size_all_left_icon_size"
@@ -149,7 +143,6 @@
         </TableRow>
 
         <TableRow>
-
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/FormInputLayout"
                 android:id="@+id/input_layout_discount_percentage"
@@ -181,7 +174,6 @@
         </TableRow>
 
         <TableRow>
-
             <ImageView
                 android:layout_width="@dimen/size_all_left_icon_size"
                 android:layout_height="@dimen/size_all_left_icon_size"

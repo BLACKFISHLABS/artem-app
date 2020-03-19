@@ -8,6 +8,8 @@ import androidx.annotation.Nullable;
 import com.stepstone.stepper.StepperLayout;
 import com.stepstone.stepper.VerificationError;
 
+import java.util.Objects;
+
 import butterknife.BindView;
 import io.github.blackfishlabs.artem.R;
 import io.github.blackfishlabs.artem.helper.StepperAdapter;
@@ -67,7 +69,7 @@ public abstract class BaseStepperActivity extends BaseActivity
 
     @Override
     public void onStepSelected(final int newStepPosition) {
-        getSupportActionBar().setSubtitle(mStepperAdapter.getViewModel(newStepPosition).getTitle());
+        Objects.requireNonNull(getSupportActionBar()).setSubtitle(mStepperAdapter.getViewModel(newStepPosition).getTitle());
     }
 
     @Override
