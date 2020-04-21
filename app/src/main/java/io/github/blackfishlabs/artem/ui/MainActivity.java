@@ -115,7 +115,7 @@ public class MainActivity extends BaseActivity implements Drawer.OnDrawerItemCli
                 .withName(nameToShow.toUpperCase())
                 .withEmail(emailToShow)
                 .withTypeface(AndroidUtils.getFont(this));
-                //.withIcon(builder.buildRound(nameWithTwoLetters, Color.TRANSPARENT));
+        //.withIcon(builder.buildRound(nameWithTwoLetters, Color.TRANSPARENT));
 
         if (user != null && user.getPhotoUrl() != null) {
             profile.withIcon(user.getPhotoUrl());

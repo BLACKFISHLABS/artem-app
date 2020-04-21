@@ -234,7 +234,7 @@
         Desculpe, houve uma falha quando tentamos carregar os dados do relatório de pedidos.
         Por favor tente novamente!
     </string>
-    <string name="orders_report_fragment_title">Relatório pedidos</string>
+    <string name="orders_report_fragment_title">Relatório de Pedidos</string>
     <string name="orders_report_no_orders">Seu relatório dos pedidos é visualizado aqui</string>
 
     <!-- Orders Report screen -->
@@ -258,7 +258,7 @@
     <string name="title_atelier_value_per_hour_qnt">Quantidade de Horas</string>
     <string name="afiliate_help">
         Se você precisa aceitar cartões no seu negócio a melhor opção são as maquininhas de cartões do Mercado Pago!
-        \n\nClique na imagem para ser direcionado a compra do item.\n
+        \n\nClique na imagem para ser direcionado.\n
     </string>
     <string name="title_ads">Mercado Pago</string>
 </resources>

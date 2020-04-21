@@ -9,8 +9,8 @@ android {
         applicationId "io.github.blackfishlabs.artem"
         minSdkVersion 22
         targetSdkVersion 29
-        versionCode 17
-        versionName "1.1.7"
+        versionCode 18
+        versionName "1.1.8"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
         multiDexEnabled true

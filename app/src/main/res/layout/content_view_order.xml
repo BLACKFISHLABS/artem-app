@@ -16,6 +16,7 @@
         android:stretchColumns="1">
 
         <TableRow>
+
             <ImageView
                 android:layout_width="@dimen/size_all_left_icon_size"
                 android:layout_height="@dimen/size_all_left_icon_size"
@@ -37,6 +38,7 @@
         </TableRow>
 
         <TableRow>
+
             <ImageView
                 android:layout_width="@dimen/size_all_left_icon_size"
                 android:layout_height="@dimen/size_all_left_icon_size"
@@ -58,6 +60,7 @@
         </TableRow>
 
         <TableRow>
+
             <ImageView
                 android:layout_width="@dimen/size_all_left_icon_size"
                 android:layout_height="@dimen/size_all_left_icon_size"
@@ -79,6 +82,7 @@
         </TableRow>
 
         <TableRow>
+
             <ImageView
                 android:layout_width="@dimen/size_all_left_icon_size"
                 android:layout_height="@dimen/size_all_left_icon_size"
@@ -100,6 +104,7 @@
         </TableRow>
 
         <TableRow>
+
             <ImageView
                 android:layout_width="@dimen/size_all_left_icon_size"
                 android:layout_height="@dimen/size_all_left_icon_size"
@@ -121,6 +126,7 @@
         </TableRow>
 
         <TableRow>
+
             <ImageView
                 android:layout_width="@dimen/size_all_left_icon_size"
                 android:layout_height="@dimen/size_all_left_icon_size"
@@ -143,6 +149,7 @@
         </TableRow>
 
         <TableRow>
+
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/FormInputLayout"
                 android:id="@+id/input_layout_discount_percentage"
@@ -174,6 +181,7 @@
         </TableRow>
 
         <TableRow>
+
             <ImageView
                 android:layout_width="@dimen/size_all_left_icon_size"
                 android:layout_height="@dimen/size_all_left_icon_size"
