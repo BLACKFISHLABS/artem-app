@@ -93,11 +93,13 @@ public class EditInfoValuePerHourActivity extends BaseActivity {
     @OnTextChanged(R.id.edit_text_work_hour)
     void onEditTextWorkHourChanged(CharSequence text) {
         mCurrentValuePerHourJson.withWorkHour(NumberUtils.toInt(text.toString()));
+        calculate();
     }
 
     @OnTextChanged(R.id.edit_text_week_days)
     void onEditTextWeekDaysChanged(CharSequence text) {
         mCurrentValuePerHourJson.withWeekDays(NumberUtils.toInt(text.toString()));
+        calculate();
     }
 
     @OnTextChanged(R.id.edit_text_money_focus)
@@ -112,10 +114,10 @@ public class EditInfoValuePerHourActivity extends BaseActivity {
     }
 
     private void calculate() {
-        Integer hourPerMonth = (mCurrentValuePerHourJson.getWorkHour() * mCurrentValuePerHourJson.getWeekDays()) * 4;
+        int hourPerMonth = (mCurrentValuePerHourJson.getWorkHour() * mCurrentValuePerHourJson.getWeekDays()) * 4;
 
         if (hourPerMonth > 0) {
-            BigDecimal total = mCurrentValuePerHourJson.getMoneyFocus().divide(BigDecimal.valueOf(hourPerMonth), RoundingMode.UP);
+            BigDecimal total = mCurrentValuePerHourJson.getMoneyFocus().divide(BigDecimal.valueOf(hourPerMonth), RoundingMode.HALF_UP);
             mCurrentValuePerHourJson.withValue(total);
         } else {
             mCurrentValuePerHourJson.withValue(BigDecimal.ZERO);

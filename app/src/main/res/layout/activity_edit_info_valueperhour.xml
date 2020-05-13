@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorWindowBackground"
     android:fitsSystemWindows="true"
-    tools:context=".ui.EditInfoAtelierActivity">
+    tools:context=".ui.EditInfoValuePerHourActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -37,17 +37,6 @@
             android:padding="@dimen/keyline_large"
             android:stretchColumns="1">
 
-            <TextView
-                android:id="@+id/title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/keyline_xlarge"
-                android:lineSpacingExtra="8sp"
-                android:text="Valor da sua hora"
-                android:textColor="@color/colorAccent"
-                android:textSize="32sp"
-                android:textStyle="normal" />
-
             <TableRow android:layout_marginBottom="@dimen/keyline_xlarge">
 
                 <ImageView
@@ -65,7 +54,7 @@
                     android:layout_marginStart="@dimen/keyline_large"
                     android:text="R$0.00"
                     android:textColor="@color/colorAccent"
-                    android:textSize="32sp"
+                    android:textSize="56sp"
                     android:textStyle="normal" />
             </TableRow>
 

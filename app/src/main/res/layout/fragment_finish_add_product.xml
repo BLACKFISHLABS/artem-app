@@ -30,7 +30,7 @@
                 android:lineSpacingExtra="8sp"
                 android:text="@string/fake_zero"
                 android:textColor="@color/colorAccent"
-                android:textSize="48sp"
+                android:textSize="56sp"
                 android:textStyle="bold" />
 
         </LinearLayout>

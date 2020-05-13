@@ -5,6 +5,8 @@ import android.net.Uri;
 
 import androidx.core.app.ActivityCompat;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import io.github.blackfishlabs.artem.R;
 import io.github.blackfishlabs.artem.ui.AboutFragment;
 import io.github.blackfishlabs.artem.ui.AddCustomerActivity;
@@ -39,6 +41,10 @@ public class Navigator {
                 .replace(R.id.frame_layout_all_fragment_container,
                         DashboardFragment.newInstance(), DashboardFragment.TAG)
                 .commitNow();
+
+        FloatingActionButton fab = mActivity.findViewById(R.id.fab_all_main_action);
+        fab.show();
+
         mActivity.setTitle(R.string.title_dashboard);
     }
 
@@ -48,6 +54,10 @@ public class Navigator {
                 .replace(R.id.frame_layout_all_fragment_container,
                         ProductListFragment.newInstance(), ProductListFragment.TAG)
                 .commitNow();
+
+        FloatingActionButton fab = mActivity.findViewById(R.id.fab_all_main_action);
+        fab.show();
+
         mActivity.setTitle(R.string.title_product);
     }
 
@@ -57,6 +67,10 @@ public class Navigator {
                 .replace(R.id.frame_layout_all_fragment_container,
                         CustomerListFragment.newInstance(), CustomerListFragment.TAG)
                 .commitNow();
+
+        FloatingActionButton fab = mActivity.findViewById(R.id.fab_all_main_action);
+        fab.show();
+
         mActivity.setTitle(R.string.title_customer);
     }
 
@@ -66,6 +80,10 @@ public class Navigator {
                 .replace(R.id.frame_layout_all_fragment_container,
                         OrderListPageFragment.newInstance(), OrderListPageFragment.TAG)
                 .commit();
+
+        FloatingActionButton fab = mActivity.findViewById(R.id.fab_all_main_action);
+        fab.show();
+
         mActivity.setTitle(R.string.order_list_fragment_title);
     }
 
@@ -75,6 +93,10 @@ public class Navigator {
                 .replace(R.id.frame_layout_all_fragment_container,
                         AtelierFragment.newInstance(), AtelierFragment.TAG)
                 .commitNow();
+
+        FloatingActionButton fab = mActivity.findViewById(R.id.fab_all_main_action);
+        fab.hide();
+
         mActivity.setTitle(R.string.title_atelier);
     }
 
@@ -84,6 +106,10 @@ public class Navigator {
                 .replace(R.id.frame_layout_all_fragment_container,
                         AboutFragment.newInstance(), AboutFragment.TAG)
                 .commit();
+
+        FloatingActionButton fab = mActivity.findViewById(R.id.fab_all_main_action);
+        fab.hide();
+
         mActivity.setTitle(R.string.title_about_developer);
     }
 
@@ -93,6 +119,10 @@ public class Navigator {
                 .replace(R.id.frame_layout_all_fragment_container,
                         AdsFragment.newInstance(), AdsFragment.TAG)
                 .commit();
+
+        FloatingActionButton fab = mActivity.findViewById(R.id.fab_all_main_action);
+        fab.hide();
+
         mActivity.setTitle(R.string.title_ads);
     }
 
@@ -102,6 +132,10 @@ public class Navigator {
                 .replace(R.id.frame_layout_all_fragment_container,
                         OrdersReportFragment.newInstance(), OrdersReportFragment.TAG)
                 .commit();
+
+        FloatingActionButton fab = mActivity.findViewById(R.id.fab_all_main_action);
+        fab.hide();
+
         mActivity.setTitle(R.string.orders_report_fragment_title);
     }
 

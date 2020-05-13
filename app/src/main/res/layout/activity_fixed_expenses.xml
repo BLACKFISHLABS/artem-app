@@ -53,7 +53,7 @@
                         android:lineSpacingExtra="8sp"
                         android:text="@string/fake_zero"
                         android:textColor="@color/colorAccent"
-                        android:textSize="32sp"
+                        android:textSize="42sp"
                         android:textStyle="bold" />
 
                     <TextView

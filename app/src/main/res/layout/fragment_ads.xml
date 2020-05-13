@@ -10,7 +10,7 @@
     <LinearLayout
         style="@style/ContainerLayout"
         android:gravity="top"
-        android:layout_margin="16dp">
+        android:layout_margin="8dp">
 
         <TextView
             android:id="@+id/bfWeSite"
