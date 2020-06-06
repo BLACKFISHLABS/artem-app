@@ -15,14 +15,9 @@ Funções:
 - Calculo do Valor da Sua Hora de Trabalho
 - Relatório de Vendas com Totalizador
 
-Em Breve:
-- Encomendas em PDF para compartilhamento via WhatsApp
-- Backup das informações
-- Relatório de Lucro
-
 Incrível né?! 
 Use bastante e nos dê um feedback! 
-Divulgue para as amigas!
+Divulgue para as pessoas!
 
 ## Play Store
 http://bit.ly/2uGvm86
