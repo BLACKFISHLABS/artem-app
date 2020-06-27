@@ -62,6 +62,7 @@ public class BaseApplication extends Application {
                 .name("artem.realm")
                 .schemaVersion(1L)
                 .migration(new RealmMigrationImpl())
+                .deleteRealmIfMigrationNeeded()
                 .build();
         Realm.setDefaultConfiguration(configuration);
     }

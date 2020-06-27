@@ -9,8 +9,8 @@ android {
         applicationId "io.github.blackfishlabs.artem"
         minSdkVersion 22
         targetSdkVersion 29
-        versionCode 21
-        versionName "1.2.1"
+        versionCode 22
+        versionName "1.2.2"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
         multiDexEnabled true
@@ -78,7 +78,7 @@ dependencies {
     // MultiDex Auto
     implementation 'androidx.multidex:multidex:2.0.1'
     // dexter runtime permissions
-    implementation 'com.karumi:dexter:5.0.0'
+    implementation 'com.karumi:dexter:6.2.0'
     // Chart
     implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
     // Guava
@@ -93,7 +93,7 @@ dependencies {
     implementation "com.squareup.retrofit2:retrofit:2.3.0"
     implementation "com.squareup.retrofit2:converter-gson:2.3.0"
     implementation "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:1.0.0"
-    implementation "com.squareup.okhttp3:okhttp:3.10.0"
+    implementation "com.squareup.okhttp3:okhttp:3.12.1"
     implementation "com.squareup.okhttp3:okhttp-urlconnection:3.0.1"
     implementation "com.squareup.okhttp3:logging-interceptor:3.8.0"
     // Java date and time
