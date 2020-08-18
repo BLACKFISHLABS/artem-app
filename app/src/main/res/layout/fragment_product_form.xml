@@ -42,7 +42,6 @@
                     android:id="@+id/input_layout_product_name"
                     style="@style/FormInputLayout"
                     android:layout_column="1"
-                    android:layout_marginLeft="@dimen/keyline_large"
                     android:layout_marginStart="@dimen/keyline_large"
                     app:hintTextAppearance="@style/HintTextStyle">
 

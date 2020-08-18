@@ -61,7 +61,8 @@
                 android:layout_width="200dp"
                 android:layout_height="200dp"
                 android:layout_marginBottom="@dimen/keyline_medium"
-                app:srcCompat="@drawable/dashboard" />
+                app:srcCompat="@drawable/dashboard"
+                android:contentDescription="TODO" />
 
             <TextView
                 android:id="@id/text_view_all_empty_state"

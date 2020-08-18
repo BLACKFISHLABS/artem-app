@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         card_view:cardBackgroundColor="@color/color_background_card"
         card_view:cardCornerRadius="0dp"
-        card_view:cardElevation="5dp"
+        card_view:cardElevation="0dp"
         card_view:contentPadding="@dimen/keyline_large"
         card_view:cardUseCompatPadding="true"
         android:clickable="false"
@@ -24,11 +24,9 @@
                 android:id="@+id/view_order_status"
                 android:layout_width="@dimen/keyline_large"
                 android:layout_height="@dimen/keyline_large"
-                android:layout_marginLeft="@dimen/keyline_medium"
                 android:layout_marginStart="@dimen/keyline_medium"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
                 android:visibility="gone"
                 android:background="@drawable/all_shape_order_status"
                 tools:visibility="visible" />
@@ -38,7 +36,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingBottom="@dimen/keyline_medium"
-                android:layout_toLeftOf="@id/view_order_status"
                 android:layout_toStartOf="@id/view_order_status"
                 android:ellipsize="end"
                 android:maxLines="1"
@@ -54,6 +51,7 @@
                 android:ellipsize="end"
                 android:gravity="center_vertical"
                 android:maxLines="1"
+                android:textSize="20sp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
                 tools:text="@string/order_list_example_customer_name" />
 
@@ -68,6 +66,8 @@
                 android:ellipsize="end"
                 android:gravity="center_vertical"
                 android:textColor="?attr/colorAccent"
+                android:textSize="22sp"
+                android:textStyle="bold"
                 tools:text="@string/order_list_example_total_order" />
 
             <TextView
@@ -79,6 +79,7 @@
                 android:maxLines="1"
                 android:ellipsize="end"
                 android:gravity="center_vertical"
+                android:textSize="20sp"
                 tools:text="@string/order_list_example_order_date" />
 
         </RelativeLayout>

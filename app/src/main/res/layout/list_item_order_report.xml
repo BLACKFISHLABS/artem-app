@@ -9,11 +9,9 @@
         android:id="@+id/view_order_status"
         android:layout_width="@dimen/keyline_large"
         android:layout_height="@dimen/keyline_large"
-        android:layout_marginLeft="@dimen/keyline_medium"
         android:layout_marginStart="@dimen/keyline_medium"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
         android:background="@drawable/all_shape_order_status" />
 
     <TextView
@@ -21,7 +19,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingBottom="@dimen/keyline_small"
-        android:layout_toLeftOf="@id/view_order_status"
         android:layout_toStartOf="@id/view_order_status"
         android:ellipsize="end"
         android:maxLines="1"

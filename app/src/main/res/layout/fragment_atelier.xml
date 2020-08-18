@@ -35,7 +35,7 @@
                         android:layout_height="match_parent"
                         card_view:cardBackgroundColor="@color/color_background_card"
                         card_view:cardCornerRadius="0dp"
-                        card_view:cardElevation="5dp"
+                        card_view:cardElevation="0dp"
                         card_view:contentPadding="@dimen/keyline_medium"
                         card_view:cardUseCompatPadding="true">
 
@@ -52,7 +52,8 @@
                                 android:layout_height="100dp"
                                 android:layout_gravity="center_horizontal"
                                 android:layout_marginBottom="@dimen/keyline_small"
-                                app:srcCompat="@drawable/atelier" />
+                                app:srcCompat="@drawable/atelier"
+                                android:contentDescription="TODO" />
 
                             <View
                                 android:layout_margin="@dimen/keyline_medium"
@@ -81,7 +82,7 @@
                         android:layout_height="match_parent"
                         card_view:cardBackgroundColor="@color/color_background_card"
                         card_view:cardCornerRadius="0dp"
-                        card_view:cardElevation="5dp"
+                        card_view:cardElevation="0dp"
                         card_view:contentPadding="@dimen/keyline_medium"
                         card_view:cardUseCompatPadding="true">
 
@@ -137,7 +138,7 @@
                         android:layout_height="match_parent"
                         card_view:cardBackgroundColor="@color/color_background_card"
                         card_view:cardCornerRadius="0dp"
-                        card_view:cardElevation="5dp"
+                        card_view:cardElevation="0dp"
                         card_view:contentPadding="@dimen/keyline_medium"
                         card_view:cardUseCompatPadding="true">
 
@@ -154,7 +155,8 @@
                                 android:layout_height="100dp"
                                 android:layout_gravity="center_horizontal"
                                 android:layout_marginBottom="@dimen/keyline_small"
-                                app:srcCompat="@drawable/calculate_value" />
+                                app:srcCompat="@drawable/calculate_value"
+                                android:contentDescription="TODO" />
 
                             <View
                                 android:layout_margin="@dimen/keyline_medium"
@@ -183,7 +185,7 @@
                         android:layout_height="match_parent"
                         card_view:cardBackgroundColor="@color/color_background_card"
                         card_view:cardCornerRadius="0dp"
-                        card_view:cardElevation="5dp"
+                        card_view:cardElevation="0dp"
                         card_view:contentPadding="@dimen/keyline_medium"
                         card_view:cardUseCompatPadding="true">
 
@@ -200,7 +202,8 @@
                                 android:layout_height="100dp"
                                 android:layout_gravity="center_horizontal"
                                 android:layout_marginBottom="@dimen/keyline_small"
-                                app:srcCompat="@drawable/calculate_value" />
+                                app:srcCompat="@drawable/calculate_value"
+                                android:contentDescription="TODO" />
 
                             <View
                                 android:layout_margin="@dimen/keyline_medium"

@@ -1,5 +1,5 @@
 # Artem  
-App Open source para precificar seus artesanatos
+App Open Source para precificar seus artesanatos
 
 ## Nota
 Artem, aplicativo feito com amor e totalmente grátis!
@@ -24,3 +24,7 @@ http://bit.ly/2uGvm86
 
 ## Open source
 Sinta-se a vontade para realizar um pull request
+
+## TODO
+- Encomenda em PDF (usar iText)
+- Enviar PDF de encomenda via whatsapp

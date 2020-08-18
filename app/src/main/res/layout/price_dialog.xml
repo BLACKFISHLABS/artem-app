@@ -44,7 +44,6 @@
                 style="@style/FormInputLayout"
                 android:layout_column="1"
                 android:layout_marginStart="@dimen/keyline_large"
-                android:layout_marginLeft="@dimen/keyline_large"
                 app:hintTextAppearance="@style/HintTextStyle">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -70,7 +69,6 @@
                 style="@style/FormInputLayout"
                 android:layout_column="1"
                 android:layout_marginStart="@dimen/keyline_large"
-                android:layout_marginLeft="@dimen/keyline_large"
                 app:hintTextAppearance="@style/HintTextStyle">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -96,7 +94,6 @@
                 style="@style/FormInputLayout"
                 android:layout_column="1"
                 android:layout_marginStart="@dimen/keyline_large"
-                android:layout_marginLeft="@dimen/keyline_large"
                 app:hintTextAppearance="@style/HintTextStyle">
 
                 <com.google.android.material.textfield.TextInputEditText

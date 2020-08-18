@@ -67,7 +67,8 @@
                 style="@style/NonEditableField"
                 android:id="@+id/edit_text_issue_date_initial"
                 android:hint="@string/all_issue_date_initial"
-                tools:ignore="TextFields" />
+                tools:ignore="TextFields"
+                android:autofillHints="" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -89,7 +90,8 @@
                 style="@style/NonEditableField"
                 android:id="@+id/edit_text_issue_date_final"
                 android:hint="@string/all_issue_date_final"
-                tools:ignore="TextFields" />
+                tools:ignore="TextFields"
+                android:autofillHints="" />
 
         </com.google.android.material.textfield.TextInputLayout>
 

@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         card_view:cardBackgroundColor="@color/color_background_card"
         card_view:cardCornerRadius="0dp"
-        card_view:cardElevation="5dp"
+        card_view:cardElevation="0dp"
         card_view:contentPadding="@dimen/keyline_large"
         card_view:cardUseCompatPadding="true"
         android:clickable="false">
@@ -24,8 +24,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true">
+                android:layout_alignParentEnd="true">
 
                 <ViewSwitcher
                     android:id="@+id/view_switcher"
@@ -75,7 +74,6 @@
                         android:textColor="@android:color/white"
                         android:background="@color/md_red_300"
                         android:padding="@dimen/keyline_small"
-                        android:layout_marginRight="@dimen/keyline_medium"
                         android:layout_marginEnd="@dimen/keyline_medium"
                         app:srcCompat="@drawable/ic_exposure_neg_1" />
 
@@ -97,7 +95,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_toLeftOf="@id/linear_layout_edit_quantity"
                 android:layout_toStartOf="@id/linear_layout_edit_quantity"
                 android:layout_centerVertical="true">
 
@@ -109,6 +106,7 @@
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
                     android:maxLines="2"
                     android:ellipsize="end"
+                    android:textSize="22sp"
                     tools:text="@string/select_order_items_example_product_name" />
 
                 <TextView
@@ -120,6 +118,7 @@
                     android:gravity="center_vertical"
                     android:maxLines="1"
                     android:ellipsize="end"
+                    android:textSize="22sp"
                     tools:text="@string/select_order_items_example_product_price" />
 
                 <TextView
@@ -131,6 +130,7 @@
                     android:maxLines="1"
                     android:ellipsize="end"
                     android:textStyle="bold"
+                    android:textSize="22sp"
                     tools:text="@string/select_order_items_example_item_total" />
 
             </LinearLayout>
