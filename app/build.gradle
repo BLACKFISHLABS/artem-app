@@ -1,6 +1,5 @@
 apply plugin: 'com.android.application'
 apply plugin: 'realm-android'
-apply plugin: 'io.fabric'
 
 android {
     compileSdkVersion 29
@@ -10,8 +9,8 @@ android {
         minSdkVersion 22
         //noinspection OldTargetApi
         targetSdkVersion 29
-        versionCode 23
-        versionName "1.2.3"
+        versionCode 50
+        versionName "1.5.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
         multiDexEnabled true
@@ -47,12 +46,12 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.2.0'
-    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     //noinspection GradleDependency
     implementation 'com.google.android.material:material:1.0.0'
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
     implementation 'com.mikepenz:materialdrawer:6.1.2'
     implementation 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
@@ -87,7 +86,7 @@ dependencies {
     // Stepper
     implementation 'com.stepstone.stepper:material-stepper:3.2.0'
     // Gson
-    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.google.code.gson:gson:2.8.6'
     // Phone number parsing, formatting, and validating
     implementation 'com.googlecode.libphonenumber:libphonenumber:8.4.2'
     // retrofit
@@ -100,11 +99,10 @@ dependencies {
     // Java date and time
     implementation 'net.danlew:android.joda:2.9.9'
     // Firebase
-    implementation 'com.google.firebase:firebase-core:17.5.0'
-    implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
-    implementation "com.google.firebase:firebase-auth:19.3.2"
+    implementation 'com.google.firebase:firebase-core:18.0.3'
+    implementation "com.google.firebase:firebase-auth:20.0.4"
     implementation "com.firebaseui:firebase-ui-auth:4.2.1"
-    implementation 'com.google.firebase:firebase-analytics:17.5.0'
+    implementation 'com.google.firebase:firebase-analytics:18.0.3'
     // Picasso
     implementation 'com.squareup.picasso:picasso:2.71828'
 

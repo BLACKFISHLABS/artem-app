@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "21928213149",
+    "firebase_url": "https://artem-a0385.firebaseio.com",
+    "project_id": "artem-a0385",
+    "storage_bucket": "artem-a0385.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:21928213149:android:00d033b010ee1c2d2d3274",
+        "android_client_info": {
+          "package_name": "io.github.blackfishlabs.artem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "21928213149-3eoi3tgcid717t5r2hgr35nqofu3pq4n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "io.github.blackfishlabs.artem",
+            "certificate_hash": "10446c3d06802707e616a34c338707057a4206f9"
+          }
+        },
+        {
+          "client_id": "21928213149-amd42312vlo76rupbiavgerk5236d0su.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "io.github.blackfishlabs.artem",
+            "certificate_hash": "7d27dd56793b188c3719a9e8cb42314208ccda48"
+          }
+        },
+        {
+          "client_id": "21928213149-4ud0sca87dn2u2pe5l0ouldtijs6bjba.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9sMbOjk-eDbV4nz3WqIab-nKznfjQRCY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "21928213149-4ud0sca87dn2u2pe5l0ouldtijs6bjba.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

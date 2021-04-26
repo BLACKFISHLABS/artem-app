@@ -5,13 +5,10 @@ import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.widget.ImageView;
 
-import com.crashlytics.android.Crashlytics;
-import com.crashlytics.android.core.CrashlyticsCore;
 import com.mikepenz.materialdrawer.util.AbstractDrawerImageLoader;
 import com.mikepenz.materialdrawer.util.DrawerImageLoader;
 import com.squareup.picasso.Picasso;
 
-import io.fabric.sdk.android.Fabric;
 import io.github.blackfishlabs.artem.data.realm.RealmMigrationImpl;
 import io.realm.Realm;
 import io.realm.RealmConfiguration;
@@ -27,7 +24,6 @@ public class BaseApplication extends Application {
         mInstance = this;
         initLogging();
         initRealm();
-        initCrashlytics();
 
         DrawerImageLoader.init(new AbstractDrawerImageLoader() {
             @Override
@@ -65,14 +61,6 @@ public class BaseApplication extends Application {
                 .deleteRealmIfMigrationNeeded()
                 .build();
         Realm.setDefaultConfiguration(configuration);
-    }
-
-    private void initCrashlytics() {
-        Crashlytics crashlyticsKit = new Crashlytics.Builder()
-                .core(new CrashlyticsCore.Builder().disabled(BuildConfig.DEBUG).build())
-                .build();
-
-        Fabric.with(this, crashlyticsKit);
     }
 
 }
